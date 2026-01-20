@@ -1,0 +1,547 @@
+% Supplementary Table 1. Ion Channel Models
+% Serial pages 1/5 through 5/5 combined into one block.
+
+% -------------------------
+% Page 1 / 5
+% -------------------------
+
+% SHL1
+m_{\mathrm{SHL1},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{SHL1}}}(V)
+= \frac{a}{e^{-(V-b)/c} + e^{(V-d)/e}} + f
+
+h^f_{\mathrm{SHL1},\infty}(V)
+= h^s_{\mathrm{SHL1},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau^f_{h_{\mathrm{SHL1}}}(V)
+= \tau^s_{h_{\mathrm{SHL1}}}(V)
+= \frac{a}{1 + e^{(V-b)/c}} + d
+
+I_{\mathrm{SHL1}}
+= \bar{g}_{\mathrm{SHL1}}
+\, m_{\mathrm{SHL1}}^{3}
+\left(0.7\,h^f_{\mathrm{SHL1}} + 0.3\,h^s_{\mathrm{SHL1}}\right)
+(V - V_K)
+
+% KVS1
+m_{\mathrm{KVS1},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+h_{\mathrm{KVS1},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{m_{\mathrm{KVS1}}}(V)
+= \tau_{h_{\mathrm{KVS1}}}(V)
+= \frac{a}{1 + e^{(V-b)/c}} + d
+
+I_{\mathrm{KVS1}}
+= \bar{g}_{\mathrm{KVS1}}
+\, m_{\mathrm{KVS1}}
+\, h_{\mathrm{KVS1}}
+(V - V_K)
+
+% SHK1
+m_{\mathrm{SHK1},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{SHK1}}}(V)
+= \frac{a}{e^{-(V-b)/c} + e^{(V-d)/e}} + f
+
+h_{\mathrm{SHK1},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{h_{\mathrm{SHK1}}}(V)
+= a
+
+I_{\mathrm{SHK1}}
+= \bar{g}_{\mathrm{SHK1}}
+\, m_{\mathrm{SHK1}}
+\, h_{\mathrm{SHK1}}
+(V - V_K)
+
+% -------------------------
+% Page 2 / 5
+% -------------------------
+
+% KQT3
+m^f_{\mathrm{KQT3},\infty}(V)
+= m^s_{\mathrm{KQT3},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau^f_{m_{\mathrm{KQT3}}}(V)
+= \frac{a}{1 + \left(\frac{V + b}{c}\right)^2}
+
+\tau^s_{m_{\mathrm{KQT}}}(V)
+= a
++ \frac{b}{1 + 10^{-c(d - V)}}
++ \frac{\tilde{e}}{1 + 10^{-f(g + V)}}
+
+w_{\mathrm{KQT3},\infty}(V)
+= s_{\mathrm{KQT3},\infty}(V)
+= a + \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{w_{\mathrm{KQT3}}}(V)
+= a + \frac{b}{1 + \left(\frac{V - c}{d}\right)^2}
+
+\tau_{s_{\mathrm{KQT3}}}
+= a
+
+I_{\mathrm{KQT3}}
+= \bar{g}_{\mathrm{KQT3}}
+\left(0.7\,m^f_{\mathrm{KQT3}} + 0.3\,m^s_{\mathrm{KQT3}}\right)
+w_{\mathrm{KQT3}}
+s_{\mathrm{KQT3}}
+(V - V_K)
+
+% EGL2
+m_{\mathrm{EGL2},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{EGL2}}}(V)
+= \frac{a}{1 + e^{(V-b)/c}} + d
+
+I_{\mathrm{EGL2}}
+= \bar{g}_{\mathrm{EGL2}}
+\, m_{\mathrm{EGL2}}
+(V - V_K)
+
+% EGL36
+m^f_{\mathrm{EGL36},\infty}(V)
+= m^m_{\mathrm{EGL36},\infty}(V)
+= m^s_{\mathrm{EGL36},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau^f_{m_{\mathrm{EGL36}}}
+= \tau^m_{m_{\mathrm{EGL36}}}
+= \tau^s_{m_{\mathrm{EGL36}}}
+= a
+
+I_{\mathrm{EGL36}}
+= \bar{g}_{\mathrm{EGL36}}
+\left(
+0.33\,m^f_{\mathrm{EGL36}}
++ 0.36\,m^m_{\mathrm{EGL36}}
++ 0.39\,m^s_{\mathrm{EGL36}}
+\right)
+(V - V_K)
+
+% -------------------------
+% Page 3 / 5
+% -------------------------
+
+% IRK
+m_{\mathrm{IRK},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{IRK}}}(V)
+= \frac{a}{e^{-(V-b)/c} + e^{(V-d)/e}} + f
+
+I_{\mathrm{IRK}}
+= \bar{g}_{\mathrm{IRK}}
+\, m_{\mathrm{IRK}}
+(V - V_K)
+
+% EGL19
+m_{\mathrm{EGL19},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{EGL19}}}(V)
+=
+\left[
+a e^{-(V-b)^2/c}
+\right]
++
+\left[
+d e^{-(V-\tilde{e})^2/f}
+\right]
++ g
+
+h_{\mathrm{EGL19},\infty}(V)
+=
+\left[
+\frac{a}{1 + e^{-(V - V_{0.5})/k_i}} + b
+\right]
+\cdot
+\left[
+\frac{c}{1 + e^{(V - V_{0.5})/k_b}} + d
+\right]
+
+\tau_{h_{\mathrm{EGL19}}}(V)
+=
+a
+\left[
+\frac{b}{1 + e^{(V-c)/d}}
++
+\frac{\tilde{e}}{1 + e^{(V-f)/g}}
+\right]
++ h
+
+I_{\mathrm{EGL19}}
+= \bar{g}_{\mathrm{EGL19}}
+\, m_{\mathrm{EGL19}}
+\, h_{\mathrm{EGL19}}
+(V - V_{\mathrm{Ca}})
+
+% -------------------------
+% Page 4 / 5
+% -------------------------
+
+% UNC2
+m_{\mathrm{UNC2},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{UNC2}}}(V)
+= \frac{a}{e^{-(V-b)/c} + e^{(V-d)/e}} + \tilde{e}
+
+h_{\mathrm{UNC2},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{h_{\mathrm{UNC2}}}(V)
+= \frac{a}{1 + e^{-(V-b)/c}} + \frac{d}{1 + e^{(V-\tilde{e})/f}}
+
+I_{\mathrm{UNC2}}
+= \bar{g}_{\mathrm{UNC2}}
+\, m_{\mathrm{UNC2}}
+\, h_{\mathrm{UNC2}}
+(V - V_{\mathrm{Ca}})
+
+% CCA1
+m_{\mathrm{CCA1},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+h_{\mathrm{CCA1},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{m_{\mathrm{CCA1}}}(V)
+= \frac{a}{1 + e^{-(V-b)/c}} + d
+
+\tau_{h_{\mathrm{CCA1}}}(V)
+= \frac{a}{1 + e^{(V-b)/c}} + d
+
+I_{\mathrm{CCA1}}
+= \bar{g}_{\mathrm{CCA1}}
+\, m_{\mathrm{CCA1}}^{2}
+\, h_{\mathrm{CCA1}}
+(V - V_{\mathrm{Ca}})
+
+% -------------------------
+% Page 5 / 5
+% -------------------------
+
+% SLO1_UNC2 / SLO1_EGL19 / SLO2_UNC2 / SLO2_EGL19
+m_{\mathrm{BK},\infty}(V, Ca)
+=
+\frac{
+m_{\mathrm{CaV},\infty}
+k_o^{+}
+(\alpha + \beta + k_c^{-})
+}{
+(k_o^{+} + k_o^{-})(k_c^{-} + \alpha) + \beta k_c^{-}
+}
+
+\tau_{m_{\mathrm{BK}}}(V, Ca)
+=
+\frac{\alpha + \beta + k_c^{-}}
+{(k_o^{+} + k_o^{-})(k_c^{-} + \alpha) + \beta k_c^{-}}
+
+\alpha
+= \frac{m_{\mathrm{CaV},\infty}}{\tau_{m_{\mathrm{CaV}}}}
+
+\beta
+= \tau^{-1}_{m_{\mathrm{CaV}}} - \alpha
+
+I_{\mathrm{BK}}
+= \bar{g}_{\mathrm{BK}}
+\, m_{\mathrm{BK}}
+\, h_{\mathrm{CaV}}
+(V - V_K)
+
+% KCNL
+m_{\mathrm{KCNL},\infty}(Ca)
+= \frac{Ca}{K_{Ca} + Ca}
+
+\tau_{m_{\mathrm{KCNL}}}
+= a
+
+I_{\mathrm{KCNL}}
+= \bar{g}_{\mathrm{KCNL}}
+\, m_{\mathrm{KCNL}}
+(V - V_K)
+
+% NCA
+I_{\mathrm{NCA}}
+= \bar{g}_{\mathrm{NCA}}
+(V - V_{\mathrm{Na}})
+
+% Supplementary Table 2. Ion Channel Model Parameters
+% Serial pages (this set) 1/5 through 5/5 combined into one block.
+
+% -------------------------
+% Page 1 / 5  (image ...-06)
+% -------------------------
+
+% SHL1
+% m_\infty
+V_{0.5} = 11~\mathrm{mV}
+k_a     = 14.1~\mathrm{mV}
+% h_\infty
+V_{0.5} = -33.1~\mathrm{mV}
+k_i     = 8.3~\mathrm{mV}
+% \tau_m
+a = 13.8~\mathrm{ms}
+b = -17.5~\mathrm{mV}
+c = 12.9~\mathrm{mV}
+d = -3.7~\mathrm{mV}
+e = 6.5~\mathrm{mV}
+f = 1.9~\mathrm{ms}
+% \tau_h^{f}
+a = 539.2~\mathrm{ms}
+b = -28.2~\mathrm{mV}
+c = 4.9~\mathrm{mV}
+d = 27.3~\mathrm{ms}
+% \tau_h^{s}
+a = 8422~\mathrm{ms}
+b = -37.7~\mathrm{mV}
+c = 6.4~\mathrm{mV}
+d = 118.9~\mathrm{ms}
+
+% SHK1
+% m_\infty
+V_{0.5} = 20.4~\mathrm{mV}
+k_a     = 7.7~\mathrm{mV}
+% h_\infty
+V_{0.5} = -7~\mathrm{mV}
+k_i     = 5.8~\mathrm{mV}
+% \tau_m
+a = 26.6~\mathrm{ms}
+b = -33.7~\mathrm{mV}
+c = 15.8~\mathrm{mV}
+d = -33.7~\mathrm{mV}
+e = 15.4~\mathrm{mV}
+f = 2~\mathrm{ms}
+% \tau_h
+a = 1400~\mathrm{ms}
+
+% KVS1
+% m_\infty
+V_{0.5} = 57.1~\mathrm{mV}
+k_a     = 25~\mathrm{mV}
+% h_\infty
+V_{0.5} = 47~\mathrm{mV}
+k_i     = 11.1~\mathrm{mV}
+% \tau_m
+a = 30~\mathrm{ms}
+b = 18.1~\mathrm{mV}
+c = 20~\mathrm{mV}
+d = 1~\mathrm{ms}
+% \tau_h  (continues on next page)
+a = 88.5~\mathrm{ms}
+b = 50~\mathrm{mV}
+
+% -------------------------
+% Page 2 / 5  (image ...-07)
+% -------------------------
+
+% KVS1 (continued)
+% \tau_h (continued)
+c = -15~\mathrm{mV}
+d = 53.4~\mathrm{ms}
+
+% KQT3
+% m_\infty
+V_{0.5} = -12.6726~\mathrm{mV}
+k_a     = 15.8008~\mathrm{mV}
+% w_\infty
+V_{0.5} = -1.084~\mathrm{mV}
+k_i     = 28.78~\mathrm{mV}
+a       = 0.49
+b       = 0.51
+% s_\infty
+V_{0.5} = -45.3~\mathrm{mV}
+k_i     = 12.3~\mathrm{mV}
+a       = 0.34
+b       = 0.66
+% \tau_m^{f}
+a = 395.3~\mathrm{ms}
+b = 38.1~\mathrm{mV}
+c = 33.59~\mathrm{mV}
+% \tau_m^{s}
+a = 5503~\mathrm{ms}
+b = -5345.4~\mathrm{ms}
+c = 0.02827~\mathrm{mV}^{-1}
+d = -23.9~\mathrm{mV}
+e = 4590.6~\mathrm{ms}
+f = 0.0357~\mathrm{mV}^{-1}
+g = 14.15~\mathrm{mV}
+% \tau_w
+a = 0.544~\mathrm{ms}
+b = 29.2~\mathrm{ms}
+c = -48.09~\mathrm{mV}
+d = 48.83~\mathrm{mV}
+% \tau_s
+a = 500000~\mathrm{ms}
+
+% EGL2
+% m_\infty
+V_{0.5} = -6.9~\mathrm{mV}
+k_a     = 14.9~\mathrm{mV}
+% \tau_m
+a = 1845.8~\mathrm{ms}
+b = -122.6~\mathrm{mV}
+c = -13.8~\mathrm{mV}
+d = 1517.74~\mathrm{ms}
+
+% EGL36
+% m_\infty
+V_{0.5} = 63~\mathrm{mV}
+k_a     = 28.5~\mathrm{mV}
+% \tau_m^{s}
+a = 355~\mathrm{ms}
+% \tau_m^{m}
+a = 63~\mathrm{ms}
+% \tau_m^{f}
+a = 13~\mathrm{ms}
+
+% IRK
+% m_\infty
+V_{0.5} = -82~\mathrm{mV}
+k_a     = 13~\mathrm{mV}
+% \tau_m (partial; continues on next page)
+a = 17.1~\mathrm{ms}
+b = -17.8~\mathrm{mV}
+
+% -------------------------
+% Page 3 / 5  (image ...-08)
+% -------------------------
+
+% IRK (continued)
+% \tau_m (continued)
+c = 20.3~\mathrm{mV}
+d = -43.4~\mathrm{mV}
+e = 11.2~\mathrm{mV}
+f = 3.8~\mathrm{ms}
+
+% EGL19
+% m_\infty
+V_{0.5} = 5.6~\mathrm{mV}
+k_a     = 7.5~\mathrm{mV}
+% h_\infty
+V_{0.5}   = 24.9~\mathrm{mV}
+k_i       = 12~\mathrm{mV}
+V_{0.5}^b = -20.5~\mathrm{mV}
+k_i^b     = 8.1~\mathrm{mV}
+a         = 1.43
+b         = 0.14
+c         = 5.96
+d         = 0.6
+% \tau_m
+a = 2.9~\mathrm{ms}
+b = 5.2~\mathrm{mV}
+c = 6~\mathrm{mV}
+d = 1.9~\mathrm{ms}
+e = 1.4~\mathrm{mV}
+f = 30~\mathrm{mV}
+g = 2.3~\mathrm{ms}
+% \tau_h
+a = 0.4
+b = 44.6~\mathrm{ms}
+c = -23~\mathrm{mV}
+d = 5~\mathrm{mV}
+e = 36.4~\mathrm{ms}
+f = 28.7~\mathrm{mV}
+g = 3.7~\mathrm{mV}
+h = 43.1~\mathrm{ms}
+
+% UNC2
+% m_\infty
+V_{0.5} = -12.2~\mathrm{mV}
+k_a     = 4~\mathrm{mV}
+% h_\infty
+V_{0.5} = -52.5~\mathrm{mV}
+k_i     = 5.6~\mathrm{mV}
+% \tau_m
+a         = 1.5~\mathrm{ms}
+b         = -8.2~\mathrm{mV}
+c         = 9.1~\mathrm{mV}
+d         = 15.4~\mathrm{mV}
+\tilde{e} = 0.1~\mathrm{ms}
+% \tau_h (partial; continues on next page)
+a = 83.8~\mathrm{ms}
+b = 52.9~\mathrm{mV}
+c = -3.5~\mathrm{mV}
+d = 72.1~\mathrm{ms}
+
+% -------------------------
+% Page 4 / 5  (image ...-09)
+% -------------------------
+
+% UNC2 (continued)
+% \tau_h (continued)
+\tilde{e} = 23.9~\mathrm{mV}
+f         = -3.6~\mathrm{mV}
+
+% CCA1
+% m_\infty
+V_{0.5} = -43.32~\mathrm{mV}
+k_a     = 7.6~\mathrm{mV}
+% h_\infty
+V_{0.5} = -58~\mathrm{mV}
+k_i     = 7~\mathrm{mV}
+% \tau_m
+a = 40~\mathrm{ms}
+b = -62.5~\mathrm{mV}
+c = -12.6~\mathrm{mV}
+d = 0.7~\mathrm{ms}
+% \tau_h
+a = 280~\mathrm{ms}
+b = -60.7~\mathrm{mV}
+c = 8.5~\mathrm{mV}
+d = 19.8~\mathrm{ms}
+
+% SLO1
+w_{yx} = 0.013~\mathrm{mV}^{-1}
+w_{xy} = -0.028~\mathrm{mV}^{-1}
+w_0^-  = 3.15~\mathrm{ms}^{-1}
+w_0^+  = 0.16~\mathrm{ms}^{-1}
+K_{xy} = 55.73~\mu\mathrm{M}/\mu\mathrm{m}^3
+n_{xy} = 1.3
+K_{yx} = 34.34~\mu\mathrm{M}/\mu\mathrm{m}^3
+n_{yx} = 10^{-4}
+
+% SLO2
+w_{yx} = 0.019~\mathrm{mV}^{-1}
+w_{xy} = -0.024~\mathrm{mV}^{-1}
+w_0^-  = 0.9~\mathrm{ms}^{-1}
+w_0^+  = 0.027~\mathrm{ms}^{-1}
+K_{xy} = 93.45~\mu\mathrm{M}/\mu\mathrm{m}^3
+n_{xy} = 1.84
+K_{yx} = 3294.55~\mu\mathrm{M}/\mu\mathrm{m}^3
+n_{yx} = 10^{-5}
+
+% KCNL
+K_{Ca} = 0.33~\mu\mathrm{M}
+% \tau_m
+a = 6.3~\mathrm{ms}
+
+% Intracellular calcium calculation
+g_{sc}            = 40~\mathrm{pS}
+V_{Ca}            = 60~\mathrm{mV}
+r                 = 13~\mathrm{nm}
+F                 = 96485~\mathrm{C}\,\mathrm{mol}^{-1}
+D_{Ca}            = 250~\mu\mathrm{m}^2/\mathrm{s}
+k_B^+             = 500~\mu\mathrm{M}^{-1}\,\mathrm{s}^{-1}
+[B]_{\mathrm{tot}}= 30~\mu\mathrm{M}
+[Ca^{2+}]_{c,i}^r = 0.05~\mu\mathrm{M}
+V_{\mathrm{cell}} = 31.63~\mu\mathrm{m}^3
+f                 = 0.001
+
+% -------------------------
+% Page 5 / 5  (image ...-10)
+% -------------------------
+
+% Intracellular calcium calculation (continued)
+\tau_{Ca}              = 50~\mathrm{ms}
+[Ca^{2+}]_{eq}^{m}     = 0.05~\mu\mathrm{M}/\mu\mathrm{m}^2

@@ -1,0 +1,230 @@
+﻿table,page,ion_channel,function,entity,parameter,value,unit
+Supplementary Table 2,6,SHL1,m∞,,V0.5,11.0,mV
+Supplementary Table 2,6,SHL1,m∞,,ka,14.1,mV
+Supplementary Table 2,6,SHL1,h∞,,V0.5,-33.1,mV
+Supplementary Table 2,6,SHL1,h∞,,ki,8.3,mV
+Supplementary Table 2,6,SHL1,τm,,a,13.8,ms
+Supplementary Table 2,6,SHL1,τm,,b,-17.5,mV
+Supplementary Table 2,6,SHL1,τm,,c,12.9,mV
+Supplementary Table 2,6,SHL1,τm,,d,-3.7,mV
+Supplementary Table 2,6,SHL1,τm,,e,6.5,mV
+Supplementary Table 2,6,SHL1,τm,,f,1.9,ms
+Supplementary Table 2,6,SHL1,τfh,,a,539.2,ms
+Supplementary Table 2,6,SHL1,τfh,,b,-28.2,mV
+Supplementary Table 2,6,SHL1,τfh,,c,4.9,mV
+Supplementary Table 2,6,SHL1,τfh,,d,27.3,ms
+Supplementary Table 2,6,SHL1,τsh,,a,8422.0,ms
+Supplementary Table 2,6,SHL1,τsh,,b,-37.7,mV
+Supplementary Table 2,6,SHL1,τsh,,c,6.4,mV
+Supplementary Table 2,6,SHL1,τsh,,d,118.9,ms
+Supplementary Table 2,6,SHK1,m∞,,V0.5,20.4,mV
+Supplementary Table 2,6,SHK1,m∞,,ka,7.7,mV
+Supplementary Table 2,6,SHK1,h∞,,V0.5,-7.0,mV
+Supplementary Table 2,6,SHK1,h∞,,ki,5.8,mV
+Supplementary Table 2,6,SHK1,τm,,a,26.6,ms
+Supplementary Table 2,6,SHK1,τm,,b,-33.7,mV
+Supplementary Table 2,6,SHK1,τm,,c,15.8,mV
+Supplementary Table 2,6,SHK1,τm,,d,-33.7,mV
+Supplementary Table 2,6,SHK1,τm,,e,15.4,mV
+Supplementary Table 2,6,SHK1,τm,,f,2.0,ms
+Supplementary Table 2,6,SHK1,τh,,a,1400.0,ms
+Supplementary Table 2,6,KVS1,m∞,,V0.5,57.1,mV
+Supplementary Table 2,6,KVS1,m∞,,ka,25.0,mV
+Supplementary Table 2,6,KVS1,h∞,,V0.5,47.0,mV
+Supplementary Table 2,6,KVS1,h∞,,ki,11.1,mV
+Supplementary Table 2,6,KVS1,τm,,a,30.0,ms
+Supplementary Table 2,6,KVS1,τm,,b,18.1,mV
+Supplementary Table 2,6,KVS1,τm,,c,20.0,mV
+Supplementary Table 2,6,KVS1,τm,,d,1.0,ms
+Supplementary Table 2,7,KQT3,m∞,,V0.5,-12.6726,mV
+Supplementary Table 2,7,KQT3,m∞,,ka,15.8008,mV
+Supplementary Table 2,7,KQT3,w∞,,V0.5,-1.084,mV
+Supplementary Table 2,7,KQT3,w∞,,ki,28.78,mV
+Supplementary Table 2,7,KQT3,s∞,,V0.5,-45.3,mV
+Supplementary Table 2,7,KQT3,s∞,,ki,12.3,mV
+Supplementary Table 2,7,KQT3,τfm,,a,395.3,ms
+Supplementary Table 2,7,KQT3,τfm,,b,38.1,mV
+Supplementary Table 2,7,KQT3,τfm,,c,33.59,mV
+Supplementary Table 2,7,KQT3,τsm,,a,5503.0,ms
+Supplementary Table 2,7,KQT3,τsm,,b,-5345.4,ms
+Supplementary Table 2,7,KQT3,τsm,,c,0.02827,mV-1
+Supplementary Table 2,7,KQT3,τsm,,d,-23.9,mV
+Supplementary Table 2,7,KQT3,τsm,,e,4590.6,ms
+Supplementary Table 2,7,KQT3,τsm,,f,0.0357,mV-1
+Supplementary Table 2,7,KQT3,τsm,,g,14.15,mV
+Supplementary Table 2,7,KQT3,τw,,a,0.544,ms
+Supplementary Table 2,7,KQT3,τw,,b,29.2,ms
+Supplementary Table 2,7,KQT3,τw,,c,-48.09,mV
+Supplementary Table 2,7,KQT3,τw,,d,48.83,mV
+Supplementary Table 2,7,KQT3,τs,,a,500000.0,ms
+Supplementary Table 2,7,EGL2,m∞,,V0.5,-6.9,mV
+Supplementary Table 2,7,EGL2,m∞,,ka,14.9,mV
+Supplementary Table 2,7,EGL2,τm,,a,1845.8,ms
+Supplementary Table 2,7,EGL2,τm,,b,-122.6,mV
+Supplementary Table 2,7,EGL2,τm,,c,-13.8,mV
+Supplementary Table 2,7,EGL2,τm,,d,1517.74,ms
+Supplementary Table 2,7,EGL36,m∞,,V0.5,63.0,mV
+Supplementary Table 2,7,EGL36,m∞,,ka,28.5,mV
+Supplementary Table 2,7,EGL36,τsm,,a,355.0,ms
+Supplementary Table 2,7,EGL36,τ mm,,a,63.0,ms
+Supplementary Table 2,7,EGL36,τfm,,a,13.0,ms
+Supplementary Table 2,7,IRK,m∞,,V0.5,-82.0,mV
+Supplementary Table 2,7,IRK,m∞,,ka,13.0,mV
+Supplementary Table 2,8,EGL19,m∞,,V0.5,5.6,mV
+Supplementary Table 2,8,EGL19,m∞,,ka,7.5,mV
+Supplementary Table 2,8,EGL19,h∞,,V0.5,24.9,mV
+Supplementary Table 2,8,EGL19,h∞,,ki,12.0,mV
+Supplementary Table 2,8,EGL19,h∞,,V b,-20.5,mV
+Supplementary Table 2,8,EGL19,h∞,,0.5,8.1,mV
+Supplementary Table 2,8,EGL19,τm,,a,2.9,ms
+Supplementary Table 2,8,EGL19,τm,,b,5.2,mV
+Supplementary Table 2,8,EGL19,τm,,c,6.0,mV
+Supplementary Table 2,8,EGL19,τm,,d,1.9,ms
+Supplementary Table 2,8,EGL19,τm,,e,1.4,mV
+Supplementary Table 2,8,EGL19,τm,,f,30.0,mV
+Supplementary Table 2,8,EGL19,τm,,g,2.3,ms
+Supplementary Table 2,8,EGL19,τh,,a,0.4,ms
+Supplementary Table 2,8,EGL19,τh,,b,44.6,mV
+Supplementary Table 2,8,EGL19,τh,,c,-23.0,mV
+Supplementary Table 2,8,EGL19,τh,,d,5.0,ms
+Supplementary Table 2,8,EGL19,τh,,e,36.4,mV
+Supplementary Table 2,8,EGL19,τh,,f,28.7,mV
+Supplementary Table 2,8,EGL19,τh,,g,3.7,ms
+Supplementary Table 2,8,UNC2,m∞,,V0.5,-12.2,mV
+Supplementary Table 2,8,UNC2,m∞,,ka,4.0,mV
+Supplementary Table 2,8,UNC2,h∞,,V0.5,-52.5,mV
+Supplementary Table 2,8,UNC2,h∞,,ki,5.6,mV
+Supplementary Table 2,8,UNC2,τm,,a,1.5,ms
+Supplementary Table 2,8,UNC2,τm,,b,-8.2,mV
+Supplementary Table 2,8,UNC2,τm,,c,9.1,mV
+Supplementary Table 2,8,UNC2,τm,,d,15.4,mV
+Supplementary Table 2,8,UNC2,τm,,e,0.1,ms
+Supplementary Table 2,9,CCA1,m∞,,V0.5,-43.32,mV
+Supplementary Table 2,9,CCA1,m∞,,ka,7.6,mV
+Supplementary Table 2,9,CCA1,h∞,,V0.5,-58.0,mV
+Supplementary Table 2,9,CCA1,h∞,,ki,7.0,mV
+Supplementary Table 2,9,CCA1,τm,,a,40.0,ms
+Supplementary Table 2,9,CCA1,τm,,b,-62.5,mV
+Supplementary Table 2,9,CCA1,τm,,c,-12.6,mV
+Supplementary Table 2,9,CCA1,τm,,d,0.7,ms
+Supplementary Table 2,9,CCA1,τh,,a,280.0,ms
+Supplementary Table 2,9,CCA1,τh,,b,-60.7,mV
+Supplementary Table 2,9,CCA1,τh,,c,8.5,mV
+Supplementary Table 2,9,CCA1,τh,,d,19.8,ms
+Supplementary Table 2,9,KCNL,τm,,a,6.3,ms
+Supplementary Table 2,10,Ca_dynamics,tau_Ca,,tau_Ca,50.0,ms
+Supplementary Table 2,10,Ca_dynamics,Ca_eq,,[Ca2+]_eq,0.05,μM/μm
+Supplementary Table 3,11,,,AWC,𝑅 (Ω·cm) S,380.0,Ω·cm
+Supplementary Table 3,11,,,AIY,𝑅 (Ω·cm) S,269.0,Ω·cm
+Supplementary Table 3,11,,,RIM,𝑅 (Ω·cm) S,344.0,Ω·cm
+Supplementary Table 3,11,,,VD5,𝑅 (Ω·cm) S,221.0,Ω·cm
+Supplementary Table 3,11,,,AVA,𝑅 (Ω·cm) S,150.0,Ω·cm
+Supplementary Table 3,11,,,AWC,"𝐶 (μF/cm2) ,",2.0,μF/cm2
+Supplementary Table 3,11,,,AIY,"𝐶 (μF/cm2) ,",7.0,μF/cm2
+Supplementary Table 3,11,,,RIM,"𝐶 (μF/cm2) ,",4.0,μF/cm2
+Supplementary Table 3,11,,,VD5,"𝐶 (μF/cm2) ,",2.0,μF/cm2
+Supplementary Table 3,11,,,AVA,"𝐶 (μF/cm2) ,",8.0,μF/cm2
+Supplementary Table 3,11,,,AWC,𝑔 (S/cm2) ]SA,3e-05,S/cm2
+Supplementary Table 3,11,,,AIY,𝑔 (S/cm2) ]SA,1.4e-05,S/cm2
+Supplementary Table 3,11,,,RIM,𝑔 (S/cm2) ]SA,7.7e-05,S/cm2
+Supplementary Table 3,11,,,VD5,𝑔 (S/cm2) ]SA,5e-05,S/cm2
+Supplementary Table 3,11,,,AVA,𝑔 (S/cm2) ]SA,7e-05,S/cm2
+Supplementary Table 3,11,,,AWC,"𝑅 (kΩ·cm2) ,",33.3,kΩ·cm2
+Supplementary Table 3,11,,,AIY,"𝑅 (kΩ·cm2) ,",71.4,kΩ·cm2
+Supplementary Table 3,11,,,RIM,"𝑅 (kΩ·cm2) ,",13.0,kΩ·cm2
+Supplementary Table 3,11,,,VD5,"𝑅 (kΩ·cm2) ,",20.0,kΩ·cm2
+Supplementary Table 3,11,,,AVA,"𝑅 (kΩ·cm2) ,",14.3,kΩ·cm2
+Supplementary Table 3,11,,,AWC,𝑒 (mV) ]SA,-65.0,mV
+Supplementary Table 3,11,,,AIY,𝑒 (mV) ]SA,-54.5,mV
+Supplementary Table 3,11,,,RIM,𝑒 (mV) ]SA,-33.0,mV
+Supplementary Table 3,11,,,VD5,𝑒 (mV) ]SA,-75.0,mV
+Supplementary Table 3,11,,,AVA,𝑒 (mV) ]SA,-33.0,mV
+Supplementary Table 3,11,,,AWC,𝑔 (nS/μm2) 89K$,0.0026,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔 (nS/μm2) 89K$,0.001,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔 (nS/μm2) 89K$,0.001,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔 (nS/μm2) 89K$,0.001,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔 (nS/μm2) 89K$,0.0004,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔 (nS/μm2) 895$,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔 (nS/μm2) 895$,0.00047,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔 (nS/μm2) 895$,0.00015,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔 (nS/μm2) 895$,0.0055,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔 (nS/μm2) 895$,0.001,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔 (nS/μm2) 5)8$,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔 (nS/μm2) 5)8$,0.0005,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔 (nS/μm2) 5)8$,0.0001,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔 (nS/μm2) 5)8$,0.0,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔 (nS/μm2) 5)8$,0.0,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) IJK<,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) IJK<,0.001,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) IJK<,1e-05,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) IJK<,0.001,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) IJK<,0.0,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) IJK4D,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) IJK4D,0.00049,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) IJK4D,0.0012,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) IJK4D,0.0046,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) IJK4D,0.0,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) 5^_4,0.022,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) 5^_4,0.0005,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) 5^_4,5e-05,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) 5^_4,0.00016,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) 5^_4,0.0,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) IJK$L,0.006,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) IJK$L,0.0001,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) IJK$L,0.0,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) IJK$L,0.0001,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) IJK$L,0.002,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) ‘[R<,0.001,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) ‘[R<,0.0,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) ‘[R<,0.0,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) ‘[R<,0.0,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) ‘[R<,0.0001,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) RR\$,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) RR\$,0.00017,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) RR\$,0.0,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) RR\$,0.0015,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) RR\$,0.0006,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2)) 8Ka$_IJK$L,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2)) 8Ka$_IJK$L,0.00028,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2)) 8Ka$_IJK$L,1.3e-05,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2)) 8Ka$_IJK$L,0.0,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2)) 8Ka$_IJK$L,0.0,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) 8Ka$_‘[R<,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) 8Ka$_‘[R<,0.000174,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) 8Ka$_‘[R<,0.009,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) 8Ka$_‘[R<,0.004,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) 8Ka$_‘[R<,0.06,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) 8Ka<_IJK$L,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) 8Ka<_IJK$L,0.0015,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) 8Ka<_IJK$L,0.00067,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) 8Ka<_IJK$L,0.0013,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) 8Ka<_IJK$L,0.0,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) 8Ka<_‘[R<,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) 8Ka<_‘[R<,0.0022,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) 8Ka<_‘[R<,0.0,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) 8Ka<_‘[R<,0.0006,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) 8Ka<_‘[R<,0.0,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) 5R[K,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) 5R[K,0.00063,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) 5R[K,0.0,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) 5R[K,0.0,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) 5R[K,0.005,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) [R\,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) [R\,8.5e-05,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) [R\,0.0,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) [R\,0.00015,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) [R\,0.0007,nS/μm2
+Supplementary Table 3,11,,,AWC,𝑔̅ (nS/μm2) cd5,0.0,nS/μm2
+Supplementary Table 3,11,,,AIY,𝑔̅ (nS/μm2) cd5,0.0011,nS/μm2
+Supplementary Table 3,11,,,RIM,𝑔̅ (nS/μm2) cd5,0.00105,nS/μm2
+Supplementary Table 3,11,,,VD5,𝑔̅ (nS/μm2) cd5,0.0,nS/μm2
+Supplementary Table 3,11,,,AVA,𝑔̅ (nS/μm2) cd5,0.0,nS/μm2
+Main paper - connection count transform,,,,synapse_count_transform,a,23.91,
+Main paper - connection count transform,,,,synapse_count_transform,b,0.02285,
+Main paper - connection count transform,,,,gap_junction_count_transform,a,20.49,
+Main paper - connection count transform,,,,gap_junction_count_transform,b,0.02184,
+Main paper - synapse polarity init,,,,synapse_polarity_init,excitatory_inhibitory_ratio,2.33,
+Main paper - connection distance distribution,,,,synapse_distance_inverse_gaussian,mu,0.44,
+Main paper - connection distance distribution,,,,synapse_distance_inverse_gaussian,k,0.63,
+Main paper - connection distance distribution,,,,gap_junction_distance_inverse_gaussian,mu,0.7,
+Main paper - connection distance distribution,,,,gap_junction_distance_inverse_gaussian,k,0.4,

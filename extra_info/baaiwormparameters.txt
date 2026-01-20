@@ -1,0 +1,539 @@
+% =========================================================
+% Supplementary Table 1. Ion Channel Models
+% Serial pages 1/5 through 5/5 combined into one block.
+%
+% CORRECTIONS APPLIED (implementation-safe):
+% 1) KQT3: w_inf and s_inf were incorrectly forced equal and missing the "b" coefficient.
+%    - Fixed: w_inf and s_inf each use (a,b,V0.5,k_i) with explicit w/s subscripts.
+% 2) Removed tildes on parameters where Table 2 uses plain letters (e, etc.).
+%    - This avoids accidental mismatch when wiring Table 2 values into code.
+% 3) Table 2: KVS1 "tau_h^f" renamed to "tau_h" (no fast/slow gate for KVS1).
+% =========================================================
+
+% -------------------------
+% Page 1 / 5
+% -------------------------
+
+% SHL1
+m_{\mathrm{SHL1},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{SHL1}}}(V)
+= \frac{a}{e^{-(V-b)/c} + e^{(V-d)/e}} + f
+
+h^f_{\mathrm{SHL1},\infty}(V)
+= h^s_{\mathrm{SHL1},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau^f_{h_{\mathrm{SHL1}}}(V)
+= \tau^s_{h_{\mathrm{SHL1}}}(V)
+= \frac{a}{1 + e^{(V-b)/c}} + d
+
+I_{\mathrm{SHL1}}
+= \bar{g}_{\mathrm{SHL1}}
+\, m_{\mathrm{SHL1}}^{3}
+\left(0.7\,h^f_{\mathrm{SHL1}} + 0.3\,h^s_{\mathrm{SHL1}}\right)
+(V - V_K)
+
+% KVS1
+m_{\mathrm{KVS1},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+h_{\mathrm{KVS1},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{m_{\mathrm{KVS1}}}(V)
+= \tau_{h_{\mathrm{KVS1}}}(V)
+= \frac{a}{1 + e^{(V-b)/c}} + d
+
+I_{\mathrm{KVS1}}
+= \bar{g}_{\mathrm{KVS1}}
+\, m_{\mathrm{KVS1}}
+\, h_{\mathrm{KVS1}}
+(V - V_K)
+
+% SHK1
+m_{\mathrm{SHK1},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{SHK1}}}(V)
+= \frac{a}{e^{-(V-b)/c} + e^{(V-d)/e}} + f
+
+h_{\mathrm{SHK1},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{h_{\mathrm{SHK1}}}(V)
+= a
+
+I_{\mathrm{SHK1}}
+= \bar{g}_{\mathrm{SHK1}}
+\, m_{\mathrm{SHK1}}
+\, h_{\mathrm{SHK1}}
+(V - V_K)
+
+% -------------------------
+% Page 2 / 5
+% -------------------------
+
+% KQT3
+m^f_{\mathrm{KQT3},\infty}(V)
+= m^s_{\mathrm{KQT3},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau^f_{m_{\mathrm{KQT3}}}(V)
+= \frac{a}{1 + \left(\frac{V + b}{c}\right)^2}
+
+\tau^s_{m_{\mathrm{KQT3}}}(V)
+= a
++ \frac{b}{1 + 10^{-c(d - V)}}
++ \frac{e}{1 + 10^{-f(g + V)}}
+
+% FIXED: w_inf and s_inf are distinct parameterizations in Table 2
+w_{\mathrm{KQT3},\infty}(V)
+= a_w + \frac{b_w}{1 + e^{(V - V_{0.5,w})/k_{i,w}}}
+
+s_{\mathrm{KQT3},\infty}(V)
+= a_s + \frac{b_s}{1 + e^{(V - V_{0.5,s})/k_{i,s}}}
+
+\tau_{w_{\mathrm{KQT3}}}(V)
+= a + \frac{b}{1 + \left(\frac{V - c}{d}\right)^2}
+
+\tau_{s_{\mathrm{KQT3}}}
+= a
+
+I_{\mathrm{KQT3}}
+= \bar{g}_{\mathrm{KQT3}}
+\left(0.7\,m^f_{\mathrm{KQT3}} + 0.3\,m^s_{\mathrm{KQT3}}\right)
+w_{\mathrm{KQT3}}
+s_{\mathrm{KQT3}}
+(V - V_K)
+
+% EGL2
+m_{\mathrm{EGL2},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{EGL2}}}(V)
+= \frac{a}{1 + e^{(V-b)/c}} + d
+
+I_{\mathrm{EGL2}}
+= \bar{g}_{\mathrm{EGL2}}
+\, m_{\mathrm{EGL2}}
+(V - V_K)
+
+% EGL36
+m^f_{\mathrm{EGL36},\infty}(V)
+= m^m_{\mathrm{EGL36},\infty}(V)
+= m^s_{\mathrm{EGL36},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau^f_{m_{\mathrm{EGL36}}}
+= \tau^m_{m_{\mathrm{EGL36}}}
+= \tau^s_{m_{\mathrm{EGL36}}}
+= a
+
+I_{\mathrm{EGL36}}
+= \bar{g}_{\mathrm{EGL36}}
+\left(
+0.33\,m^f_{\mathrm{EGL36}}
++ 0.36\,m^m_{\mathrm{EGL36}}
++ 0.39\,m^s_{\mathrm{EGL36}}
+\right)
+(V - V_K)
+
+% -------------------------
+% Page 3 / 5
+% -------------------------
+
+% IRK
+m_{\mathrm{IRK},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{IRK}}}(V)
+= \frac{a}{e^{-(V-b)/c} + e^{(V-d)/e}} + f
+
+I_{\mathrm{IRK}}
+= \bar{g}_{\mathrm{IRK}}
+\, m_{\mathrm{IRK}}
+(V - V_K)
+
+% EGL19
+m_{\mathrm{EGL19},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{EGL19}}}(V)
+=
+\left[
+a e^{-(V-b)^2/c}
+\right]
++
+\left[
+d e^{-(V-e)^2/f}
+\right]
++ g
+
+h_{\mathrm{EGL19},\infty}(V)
+=
+\left[
+\frac{a}{1 + e^{-(V - V_{0.5})/k_i}} + b
+\right]
+\cdot
+\left[
+\frac{c}{1 + e^{(V - V_{0.5})/k_i^b}} + d
+\right]
+
+\tau_{h_{\mathrm{EGL19}}}(V)
+=
+a
+\left[
+\frac{b}{1 + e^{(V-c)/d}}
++
+\frac{e}{1 + e^{(V-f)/g}}
+\right]
++ h
+
+I_{\mathrm{EGL19}}
+= \bar{g}_{\mathrm{EGL19}}
+\, m_{\mathrm{EGL19}}
+\, h_{\mathrm{EGL19}}
+(V - V_{\mathrm{Ca}})
+
+% -------------------------
+% Page 4 / 5
+% -------------------------
+
+% UNC2
+m_{\mathrm{UNC2},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+\tau_{m_{\mathrm{UNC2}}}(V)
+= \frac{a}{e^{-(V-b)/c} + e^{(V-d)/e}} + e
+
+h_{\mathrm{UNC2},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{h_{\mathrm{UNC2}}}(V)
+= \frac{a}{1 + e^{-(V-b)/c}} + \frac{d}{1 + e^{(V-e)/f}}
+
+I_{\mathrm{UNC2}}
+= \bar{g}_{\mathrm{UNC2}}
+\, m_{\mathrm{UNC2}}
+\, h_{\mathrm{UNC2}}
+(V - V_{\mathrm{Ca}})
+
+% CCA1
+m_{\mathrm{CCA1},\infty}(V)
+= \frac{1}{1 + e^{-(V - V_{0.5})/k_a}}
+
+h_{\mathrm{CCA1},\infty}(V)
+= \frac{1}{1 + e^{(V - V_{0.5})/k_i}}
+
+\tau_{m_{\mathrm{CCA1}}}(V)
+= \frac{a}{1 + e^{-(V-b)/c}} + d
+
+\tau_{h_{\mathrm{CCA1}}}(V)
+= \frac{a}{1 + e^{(V-b)/c}} + d
+
+I_{\mathrm{CCA1}}
+= \bar{g}_{\mathrm{CCA1}}
+\, m_{\mathrm{CCA1}}^{2}
+\, h_{\mathrm{CCA1}}
+(V - V_{\mathrm{Ca}})
+
+% -------------------------
+% Page 5 / 5
+% -------------------------
+
+% SLO1_UNC2 / SLO1_EGL19 / SLO2_UNC2 / SLO2_EGL19 (BK-type)
+m_{\mathrm{BK},\infty}(V, Ca)
+=
+\frac{
+m_{\mathrm{CaV},\infty}
+k_o^{+}
+(\alpha + \beta + k_c^{-})
+}{
+(k_o^{+} + k_o^{-})(k_c^{-} + \alpha) + \beta k_c^{-}
+}
+
+\tau_{m_{\mathrm{BK}}}(V, Ca)
+=
+\frac{\alpha + \beta + k_c^{-}}
+{(k_o^{+} + k_o^{-})(k_c^{-} + \alpha) + \beta k_c^{-}}
+
+\alpha
+= \frac{m_{\mathrm{CaV},\infty}}{\tau_{m_{\mathrm{CaV}}}}
+
+\beta
+= \tau^{-1}_{m_{\mathrm{CaV}}} - \alpha
+
+I_{\mathrm{BK}}
+= \bar{g}_{\mathrm{BK}}
+\, m_{\mathrm{BK}}
+\, h_{\mathrm{CaV}}
+(V - V_K)
+
+% KCNL
+m_{\mathrm{KCNL},\infty}(Ca)
+= \frac{Ca}{K_{Ca} + Ca}
+
+\tau_{m_{\mathrm{KCNL}}}
+= a
+
+I_{\mathrm{KCNL}}
+= \bar{g}_{\mathrm{KCNL}}
+\, m_{\mathrm{KCNL}}
+(V - V_K)
+
+% NCA
+I_{\mathrm{NCA}}
+= \bar{g}_{\mathrm{NCA}}
+(V - V_{\mathrm{Na}})
+
+
+% =========================================================
+% Supplementary Table 2. Ion Channel Model Parameters
+% Serial pages 1/5 through 5/5 combined into one block.
+% Columns: Ion Channel | Function | Parameter | Value | Unit
+%
+% CORRECTION APPLIED:
+% - KVS1: tau_h^{f} -> tau_h (labeling artifact).
+% - KQT3: w_inf and s_inf parameter rows should be interpreted as (a_w,b_w,V0.5_w,k_i_w) and (a_s,b_s,V0.5_s,k_i_s).
+% =========================================================
+
+\begin{longtable}{lllll}
+\toprule
+\textbf{Ion Channel} & \textbf{Function} & \textbf{Parameter} & \textbf{Value} & \textbf{Unit} \\
+\midrule
+\endhead
+
+% Page 1 / 5
+SHL1 & $m_\infty$ & $V_{0.5}$ & 11 & $\mathrm{mV}$ \\
+SHL1 & $m_\infty$ & $k_a$ & 14.1 & $\mathrm{mV}$ \\
+SHL1 & $h_\infty$ & $V_{0.5}$ & -33.1 & $\mathrm{mV}$ \\
+SHL1 & $h_\infty$ & $k_i$ & 8.3 & $\mathrm{mV}$ \\
+SHL1 & $\tau_m$ & a & 13.8 & $\mathrm{ms}$ \\
+SHL1 & $\tau_m$ & b & -17.5 & $\mathrm{mV}$ \\
+SHL1 & $\tau_m$ & c & 12.9 & $\mathrm{mV}$ \\
+SHL1 & $\tau_m$ & d & -3.7 & $\mathrm{mV}$ \\
+SHL1 & $\tau_m$ & e & 6.5 & $\mathrm{mV}$ \\
+SHL1 & $\tau_m$ & f & 1.9 & $\mathrm{ms}$ \\
+SHL1 & $\tau_h^{f}$ & a & 539.2 & $\mathrm{ms}$ \\
+SHL1 & $\tau_h^{f}$ & b & -28.2 & $\mathrm{mV}$ \\
+SHL1 & $\tau_h^{f}$ & c & 4.9 & $\mathrm{mV}$ \\
+SHL1 & $\tau_h^{f}$ & d & 27.3 & $\mathrm{ms}$ \\
+SHL1 & $\tau_h^{s}$ & a & 8422 & $\mathrm{ms}$ \\
+SHL1 & $\tau_h^{s}$ & b & -37.7 & $\mathrm{mV}$ \\
+SHL1 & $\tau_h^{s}$ & c & 6.4 & $\mathrm{mV}$ \\
+SHL1 & $\tau_h^{s}$ & d & 118.9 & $\mathrm{ms}$ \\
+
+SHK1 & $m_\infty$ & $V_{0.5}$ & 20.4 & $\mathrm{mV}$ \\
+SHK1 & $m_\infty$ & $k_a$ & 7.7 & $\mathrm{mV}$ \\
+SHK1 & $h_\infty$ & $V_{0.5}$ & -7 & $\mathrm{mV}$ \\
+SHK1 & $h_\infty$ & $k_i$ & 5.8 & $\mathrm{mV}$ \\
+SHK1 & $\tau_m$ & a & 26.6 & $\mathrm{ms}$ \\
+SHK1 & $\tau_m$ & b & -33.7 & $\mathrm{mV}$ \\
+SHK1 & $\tau_m$ & c & 15.8 & $\mathrm{mV}$ \\
+SHK1 & $\tau_m$ & d & -33.7 & $\mathrm{mV}$ \\
+SHK1 & $\tau_m$ & e & 15.4 & $\mathrm{mV}$ \\
+SHK1 & $\tau_m$ & f & 2 & $\mathrm{ms}$ \\
+SHK1 & $\tau_h$ & a & 1400 & $\mathrm{ms}$ \\
+
+KVS1 & $m_\infty$ & $V_{0.5}$ & 57.1 & $\mathrm{mV}$ \\
+KVS1 & $m_\infty$ & $k_a$ & 25 & $\mathrm{mV}$ \\
+KVS1 & $h_\infty$ & $V_{0.5}$ & 47 & $\mathrm{mV}$ \\
+KVS1 & $h_\infty$ & $k_i$ & 11.1 & $\mathrm{mV}$ \\
+KVS1 & $\tau_m$ & a & 30 & $\mathrm{ms}$ \\
+KVS1 & $\tau_m$ & b & 18.1 & $\mathrm{mV}$ \\
+KVS1 & $\tau_m$ & c & 20 & $\mathrm{mV}$ \\
+KVS1 & $\tau_m$ & d & 1 & $\mathrm{ms}$ \\
+% FIXED LABEL: tau_h^{f} -> tau_h
+KVS1 & $\tau_h$ & a & 88.5 & $\mathrm{ms}$ \\
+KVS1 & $\tau_h$ & b & 50 & $\mathrm{mV}$ \\
+
+% Page 2 / 5
+KVS1 & $\tau_h$ & c & -15 & $\mathrm{mV}$ \\
+KVS1 & $\tau_h$ & d & 53.4 & $\mathrm{ms}$ \\
+
+KQT3 & $m_\infty$ & $V_{0.5}$ & -12.6726 & $\mathrm{mV}$ \\
+KQT3 & $m_\infty$ & $k_a$ & 15.8008 & $\mathrm{mV}$ \\
+% Interpret the following as w_inf parameters (V0.5_w,k_i_w,a_w,b_w)
+KQT3 & $w_\infty$ & $V_{0.5}$ & -1.084 & $\mathrm{mV}$ \\
+KQT3 & $w_\infty$ & $k_i$ & 28.78 & $\mathrm{mV}$ \\
+KQT3 & $w_\infty$ & a & 0.49 &  \\
+KQT3 & $w_\infty$ & b & 0.51 &  \\
+% Interpret the following as s_inf parameters (V0.5_s,k_i_s,a_s,b_s)
+KQT3 & $s_\infty$ & $V_{0.5}$ & -45.3 & $\mathrm{mV}$ \\
+KQT3 & $s_\infty$ & $k_i$ & 12.3 & $\mathrm{mV}$ \\
+KQT3 & $s_\infty$ & a & 0.34 &  \\
+KQT3 & $s_\infty$ & b & 0.66 &  \\
+KQT3 & $\tau_m^{f}$ & a & 395.3 & $\mathrm{ms}$ \\
+KQT3 & $\tau_m^{f}$ & b & 38.1 & $\mathrm{mV}$ \\
+KQT3 & $\tau_m^{f}$ & c & 33.59 & $\mathrm{mV}$ \\
+KQT3 & $\tau_m^{s}$ & a & 5503 & $\mathrm{ms}$ \\
+KQT3 & $\tau_m^{s}$ & b & -5345.4 & $\mathrm{ms}$ \\
+KQT3 & $\tau_m^{s}$ & c & 0.02827 & $\mathrm{mV}^{-1}$ \\
+KQT3 & $\tau_m^{s}$ & d & -23.9 & $\mathrm{mV}$ \\
+KQT3 & $\tau_m^{s}$ & e & 4590.6 & $\mathrm{ms}$ \\
+KQT3 & $\tau_m^{s}$ & f & 0.0357 & $\mathrm{mV}^{-1}$ \\
+KQT3 & $\tau_m^{s}$ & g & 14.15 & $\mathrm{mV}$ \\
+KQT3 & $\tau_w$ & a & 0.544 & $\mathrm{ms}$ \\
+KQT3 & $\tau_w$ & b & 29.2 & $\mathrm{ms}$ \\
+KQT3 & $\tau_w$ & c & -48.09 & $\mathrm{mV}$ \\
+KQT3 & $\tau_w$ & d & 48.83 & $\mathrm{mV}$ \\
+KQT3 & $\tau_s$ & a & 500000 & $\mathrm{ms}$ \\
+
+EGL2 & $m_\infty$ & $V_{0.5}$ & -6.9 & $\mathrm{mV}$ \\
+EGL2 & $m_\infty$ & $k_a$ & 14.9 & $\mathrm{mV}$ \\
+EGL2 & $\tau_m$ & a & 1845.8 & $\mathrm{ms}$ \\
+EGL2 & $\tau_m$ & b & -122.6 & $\mathrm{mV}$ \\
+EGL2 & $\tau_m$ & c & -13.8 & $\mathrm{mV}$ \\
+EGL2 & $\tau_m$ & d & 1517.74 & $\mathrm{ms}$ \\
+
+EGL36 & $m_\infty$ & $V_{0.5}$ & 63 & $\mathrm{mV}$ \\
+EGL36 & $m_\infty$ & $k_a$ & 28.5 & $\mathrm{mV}$ \\
+EGL36 & $\tau_m^{s}$ & a & 355 & $\mathrm{ms}$ \\
+EGL36 & $\tau_m^{m}$ & a & 63 & $\mathrm{ms}$ \\
+EGL36 & $\tau_m^{f}$ & a & 13 & $\mathrm{ms}$ \\
+
+IRK & $m_\infty$ & $V_{0.5}$ & -82 & $\mathrm{mV}$ \\
+IRK & $m_\infty$ & $k_a$ & 13 & $\mathrm{mV}$ \\
+IRK & $\tau_m$ & a & 17.1 & $\mathrm{ms}$ \\
+IRK & $\tau_m$ & b & -17.8 & $\mathrm{mV}$ \\
+
+% Page 3 / 5
+IRK & $\tau_m$ & c & 20.3 & $\mathrm{mV}$ \\
+IRK & $\tau_m$ & d & -43.4 & $\mathrm{mV}$ \\
+IRK & $\tau_m$ & e & 11.2 & $\mathrm{mV}$ \\
+IRK & $\tau_m$ & f & 3.8 & $\mathrm{ms}$ \\
+
+EGL19 & $m_\infty$ & $V_{0.5}$ & 5.6 & $\mathrm{mV}$ \\
+EGL19 & $m_\infty$ & $k_a$ & 7.5 & $\mathrm{mV}$ \\
+EGL19 & $h_\infty$ & $V_{0.5}$ & 24.9 & $\mathrm{mV}$ \\
+EGL19 & $h_\infty$ & $k_i$ & 12 & $\mathrm{mV}$ \\
+EGL19 & $h_\infty$ & $V_{0.5}^{b}$ & -20.5 & $\mathrm{mV}$ \\
+EGL19 & $h_\infty$ & $k_{i}^{b}$ & 8.1 & $\mathrm{mV}$ \\
+EGL19 & $h_\infty$ & a & 1.43 &  \\
+EGL19 & $h_\infty$ & b & 0.14 &  \\
+EGL19 & $h_\infty$ & c & 5.96 &  \\
+EGL19 & $h_\infty$ & d & 0.6 &  \\
+EGL19 & $\tau_m$ & a & 2.9 & $\mathrm{ms}$ \\
+EGL19 & $\tau_m$ & b & 5.2 & $\mathrm{mV}$ \\
+EGL19 & $\tau_m$ & c & 6 & $\mathrm{mV}$ \\
+EGL19 & $\tau_m$ & d & 1.9 & $\mathrm{ms}$ \\
+EGL19 & $\tau_m$ & e & 1.4 & $\mathrm{mV}$ \\
+EGL19 & $\tau_m$ & f & 30 & $\mathrm{mV}$ \\
+EGL19 & $\tau_m$ & g & 2.3 & $\mathrm{ms}$ \\
+EGL19 & $\tau_h$ & a & 0.4 &  \\
+EGL19 & $\tau_h$ & b & 44.6 & $\mathrm{ms}$ \\
+EGL19 & $\tau_h$ & c & -23 & $\mathrm{mV}$ \\
+EGL19 & $\tau_h$ & d & 5 & $\mathrm{mV}$ \\
+EGL19 & $\tau_h$ & e & 36.4 & $\mathrm{ms}$ \\
+EGL19 & $\tau_h$ & f & 28.7 & $\mathrm{mV}$ \\
+EGL19 & $\tau_h$ & g & 3.7 & $\mathrm{mV}$ \\
+EGL19 & $\tau_h$ & h & 43.1 & $\mathrm{ms}$ \\
+
+UNC2 & $m_\infty$ & $V_{0.5}$ & -12.2 & $\mathrm{mV}$ \\
+UNC2 & $m_\infty$ & $k_a$ & 4 & $\mathrm{mV}$ \\
+UNC2 & $h_\infty$ & $V_{0.5}$ & -52.5 & $\mathrm{mV}$ \\
+UNC2 & $h_\infty$ & $k_i$ & 5.6 & $\mathrm{mV}$ \\
+UNC2 & $\tau_m$ & a & 1.5 & $\mathrm{ms}$ \\
+UNC2 & $\tau_m$ & b & -8.2 & $\mathrm{mV}$ \\
+UNC2 & $\tau_m$ & c & 9.1 & $\mathrm{mV}$ \\
+UNC2 & $\tau_m$ & d & 15.4 & $\mathrm{mV}$ \\
+UNC2 & $\tau_m$ & e & 0.1 & $\mathrm{ms}$ \\
+UNC2 & $\tau_h$ & a & 83.8 & $\mathrm{ms}$ \\
+UNC2 & $\tau_h$ & b & 52.9 & $\mathrm{mV}$ \\
+UNC2 & $\tau_h$ & c & -3.5 & $\mathrm{mV}$ \\
+UNC2 & $\tau_h$ & d & 72.1 & $\mathrm{ms}$ \\
+
+% Page 4 / 5
+UNC2 & $\tau_h$ & e & 23.9 & $\mathrm{mV}$ \\
+UNC2 & $\tau_h$ & f & -3.6 & $\mathrm{mV}$ \\
+
+CCA1 & $m_\infty$ & $V_{0.5}$ & -43.32 & $\mathrm{mV}$ \\
+CCA1 & $m_\infty$ & $k_a$ & 7.6 & $\mathrm{mV}$ \\
+CCA1 & $h_\infty$ & $V_{0.5}$ & -58 & $\mathrm{mV}$ \\
+CCA1 & $h_\infty$ & $k_i$ & 7 & $\mathrm{mV}$ \\
+CCA1 & $\tau_m$ & a & 40 & $\mathrm{ms}$ \\
+CCA1 & $\tau_m$ & b & -62.5 & $\mathrm{mV}$ \\
+CCA1 & $\tau_m$ & c & -12.6 & $\mathrm{mV}$ \\
+CCA1 & $\tau_m$ & d & 0.7 & $\mathrm{ms}$ \\
+CCA1 & $\tau_h$ & a & 280 & $\mathrm{ms}$ \\
+CCA1 & $\tau_h$ & b & -60.7 & $\mathrm{mV}$ \\
+CCA1 & $\tau_h$ & c & 8.5 & $\mathrm{mV}$ \\
+CCA1 & $\tau_h$ & d & 19.8 & $\mathrm{ms}$ \\
+
+SLO1 &  & $w_{yx}$ & 0.013 & $\mathrm{mV}^{-1}$ \\
+SLO1 &  & $w_{xy}$ & -0.028 & $\mathrm{mV}^{-1}$ \\
+SLO1 &  & $w_{0}^{-}$ & 3.15 & $\mathrm{ms}^{-1}$ \\
+SLO1 &  & $w_{0}^{+}$ & 0.16 & $\mathrm{ms}^{-1}$ \\
+SLO1 &  & $K_{xy}$ & 55.73 & $\mu\mathrm{M}/\mu\mathrm{m}^{3}$ \\
+SLO1 &  & $n_{xy}$ & 1.3 &  \\
+SLO1 &  & $K_{yx}$ & 34.34 & $\mu\mathrm{M}/\mu\mathrm{m}^{3}$ \\
+SLO1 &  & $n_{yx}$ & $10^{-4}$ &  \\
+
+SLO2 &  & $w_{yx}$ & 0.019 & $\mathrm{mV}^{-1}$ \\
+SLO2 &  & $w_{xy}$ & -0.024 & $\mathrm{mV}^{-1}$ \\
+SLO2 &  & $w_{0}^{-}$ & 0.9 & $\mathrm{ms}^{-1}$ \\
+SLO2 &  & $w_{0}^{+}$ & 0.027 & $\mathrm{ms}^{-1}$ \\
+SLO2 &  & $K_{xy}$ & 93.45 & $\mu\mathrm{M}/\mu\mathrm{m}^{3}$ \\
+SLO2 &  & $n_{xy}$ & 1.84 &  \\
+SLO2 &  & $K_{yx}$ & 3294.55 & $\mu\mathrm{M}/\mu\mathrm{m}^{3}$ \\
+SLO2 &  & $n_{yx}$ & $10^{-5}$ &  \\
+
+KCNL &  & $K_{Ca}$ & 0.33 & $\mu\mathrm{M}$ \\
+KCNL & $\tau_m$ & a & 6.3 & $\mathrm{ms}$ \\
+
+Intracellular calcium calculation &  & $g_{sc}$ & 40 & $\mathrm{pS}$ \\
+Intracellular calcium calculation &  & $V_{Ca}$ & 60 & $\mathrm{mV}$ \\
+Intracellular calcium calculation &  & $r$ & 13 & $\mathrm{nm}$ \\
+Intracellular calcium calculation &  & $F$ & 96485 & $\mathrm{C}\,\mathrm{mol}^{-1}$ \\
+Intracellular calcium calculation &  & $D_{Ca}$ & 250 & $\mu\mathrm{m}^{2}/\mathrm{s}$ \\
+Intracellular calcium calculation &  & $k_{B}^{+}$ & 500 & $\mu\mathrm{M}^{-1}\,\mathrm{s}^{-1}$ \\
+Intracellular calcium calculation &  & $[B]_{\mathrm{tot}}$ & 30 & $\mu\mathrm{M}$ \\
+Intracellular calcium calculation &  & $[Ca^{2+}]_{c,i}^{n}$ & 0.05 & $\mu\mathrm{M}$ \\
+Intracellular calcium calculation &  & $V_{\mathrm{cell}}$ & 31.63 & $\mu\mathrm{m}^{3}$ \\
+Intracellular calcium calculation &  & $f$ & 0.001 &  \\
+
+% Page 5 / 5
+Intracellular calcium calculation &  & $\tau_{Ca}$ & 50 & $\mathrm{ms}$ \\
+Intracellular calcium calculation &  & $[Ca^{2+}]_{eq}^{m}$ & 0.05 & $\mu\mathrm{M}/\mu\mathrm{m}^{2}$ \\
+
+\bottomrule
+\end{longtable}
+
+
+% =========================================================
+% Supplementary Table 3. Neuron Model Parameters
+% =========================================================
+
+\begin{table}[ht]
+\centering
+\caption{Supplementary Table 3. Neuron Model Parameters}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Parameters} & \textbf{AWC} & \textbf{AIY} & \textbf{RIM} & \textbf{VD5} & \textbf{AVA} \\
+\midrule
+$R_a~(\Omega\cdot\mathrm{cm})$                 & 380     & 269      & 344      & 221      & 150 \\
+$C_m~(\mu\mathrm{F}/\mathrm{cm}^2)$            & 2       & 7        & 4        & 2        & 8 \\
+$g_{\mathrm{pas}}~(\mathrm{S}/\mathrm{cm}^2)$  & 0.00003 & 0.000014 & 0.000077 & 0.00005  & 0.00007 \\
+$R_m~(\mathrm{k}\Omega\cdot\mathrm{cm}^2)$     & 33.3    & 71.4     & 13       & 20       & 14.3 \\
+$e_{\mathrm{pas}}~(\mathrm{mV})$               & -65     & -54.5    & -33      & -75      & -33 \\
+$\bar{g}_{\mathrm{SHL1}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0.0026  & 0.001    & 0.001    & 0.001    & 0.0004 \\
+$\bar{g}_{\mathrm{SHK1}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0       & 0.00047  & 0.00015  & 0.0055   & 0.001 \\
+$\bar{g}_{\mathrm{KVS1}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0       & 0.0005   & 0.0001   & 0        & 0 \\
+$\bar{g}_{\mathrm{EGL2}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0       & 0.001    & 0.00001  & 0.001    & 0 \\
+$\bar{g}_{\mathrm{EGL36}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0      & 0.00049  & 0.0012   & 0.0046   & 0 \\
+$\bar{g}_{\mathrm{KQT3}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0.022   & 0.0005   & 0.00005  & 0.00016  & 0 \\
+$\bar{g}_{\mathrm{EGL19}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0.006  & 0.0001   & 0        & 0.0001   & 0.002 \\
+$\bar{g}_{\mathrm{UNC2}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0.001   & 0        & 0        & 0        & 0.0001 \\
+$\bar{g}_{\mathrm{CCA1}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0       & 0.00017  & 0        & 0.0015   & 0.0006 \\
+$\bar{g}_{\mathrm{SLO1\_EGL19}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0 & 0.00028 & 0.000013 & 0 & 0 \\
+$\bar{g}_{\mathrm{SLO1\_UNC2}}~(\mathrm{nS}/\mu\mathrm{m}^2)$  & 0 & 0.000174& 0.009    & 0.004    & 0.06 \\
+$\bar{g}_{\mathrm{SLO2\_EGL19}}~(\mathrm{nS}/\mu\mathrm{m}^2)$ & 0 & 0.0015  & 0.00067  & 0.0013   & 0 \\
+$\bar{g}_{\mathrm{SLO2\_UNC2}}~(\mathrm{nS}/\mu\mathrm{m}^2)$  & 0 & 0.0022  & 0        & 0.0006   & 0 \\
+$\bar{g}_{\mathrm{KCNL}}~(\mathrm{nS}/\mu\mathrm{m}^2)$        & 0 & 0.00063 & 0        & 0        & 0.005 \\
+$\bar{g}_{\mathrm{NCA}}~(\mathrm{nS}/\mu\mathrm{m}^2)$         & 0 & 0.000085& 0        & 0.00015  & 0.0007 \\
+$\bar{g}_{\mathrm{IRK}}~(\mathrm{nS}/\mu\mathrm{m}^2)$         & 0 & 0.0011  & 0.00105  & 0        & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
